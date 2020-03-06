@@ -1,0 +1,22 @@
+<div>
+    <p><strong>Spending Summary</strong></p>
+    <div class="bar">
+        <div class="bar-one">
+            <p>Deductible: ${{deductible}}</p>
+            <p-progressBar [value]="percentageDeductibleUsed" [showValue]="false"></p-progressBar>
+            <p style="float: left"><strong>${{amountUsed}}</strong></p>
+            <p style="float: right">${{deductibleRemaining}}</p><br>
+            <p style="float: right"><small>remaining</small></p>
+        </div>
+        <div class="bar-two">
+                <p>Out-Of-Pocket Max: ${{oopMax}}</p>
+            <p-progressBar [value]="percentageOopUsed" [showValue]="false"></p-progressBar>
+            <p style="float: left"><strong>${{amountUsed}}</strong></p>
+            <p style="float: right">${{oopRemaining}}</p><br>
+            <p style="float: right"><small>remaining</small></p>
+        </div>
+    </div>
+    
+</div>
+
+

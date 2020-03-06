@@ -1,0 +1,13 @@
+{
+
+"claims":
+[
+{"no": "1", "date":"01/01/2020", "member":"Robert Ryan", "serviceProvider":"CVS","amount":"2.53","status":"Approved"},
+{"no": "2", "date":"02/27/2019", "member":"Ninja Star", "serviceProvider":"Aetna","amount":"3.43","status":"Rejected"},
+{"no": "3", "date":"11/25/2018", "member":"Real Goat", "serviceProvider":"CVS","amount":"957.34","status":"Rejected"},
+{"no": "4", "date":"04/02/2019", "member":"Imma Ghost", "serviceProvider":"Aetna","amount":"123.23","status":"Approved"},
+{"no": "5", "date":"08/03/2018", "member":"Tim Walker", "serviceProvider":"Dr.Mike","amount":"34.54","status":"Progress"},
+{"no": "6", "date":"07/06/2018", "member":"Allen Pan", "serviceProvider":"Stephanie Ooog","amount":"23.53","status":"Progress"}
+]
+
+}

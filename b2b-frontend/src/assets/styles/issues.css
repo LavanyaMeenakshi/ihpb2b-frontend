@@ -1,0 +1,92 @@
+/*Module (Widget)*/
+    /*Background*/
+    .card-module-half {
+        height: 350px;
+    }
+
+          /*Header*/
+    
+    .table_heading_number{
+        background-color:#097DBF;
+        color: #FFFFFF;
+    }
+    .table_heading_others{
+        background-color:#7E7E7E;
+        color: #FFFFFF;
+    }
+    .table td{
+        padding: .35rem!important;
+    }
+    .table {
+        width: 535px;
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .formControl {
+        height: 34px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;        
+    }
+    .col-sm-6{
+        padding-right: 0px;
+        margin-left: 10px;
+    }
+    .col-sm-5{
+        /* padding-right: 0px; */
+        padding-right: 0px;
+    }
+    .font18{
+        font-size: 18px !important;
+    }
+
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+      }
+      
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #2196F3;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+      }
+      
+      form.example button:hover {
+        background: #0b7dda;
+      }
+      
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    .age-box { 
+        height: 40px; 
+        width: 80px; 
+        border-radius: 10px; 
+        background-color: #FFFFFF;
+        margin-left: 20px;
+        margin-top: 10px; 
+    }
+    .img-hartfordMap{
+        width:360px;
+    }
+
+    
+

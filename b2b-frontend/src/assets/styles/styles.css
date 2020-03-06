@@ -1,0 +1,560 @@
+/*Colors Definition
+UI, Lines, Soft Shadows, Borders, Text
+FFFFFF,E6E6E6,7E7E7E,F6F7F8
+Secondary Button
+4A4A4A
+Text
+313541
+Text (Disabled)
+7E7E7E
+Main CTA
+007CC4
+Gradient
+#007CC4 → #0085DA
+Positive
+56BD5B
+Alert
+F7B422
+Negative
+E1464E
+Additional
+pink -> fca484
+yellow -> fcdc04
+red pinky -> fc647c
+yellow lime -> cce434
+purple -> 8c6cd4
+*/
+@font-face {
+  font-family: 'OpenSans';
+  src: local(OpenSans-Regular),
+    url(../fonts/open-sans-v17-latin-regular.woff2) format("woff2"),
+    url(../fonts/open-sans-v17-latin-regular.woff) format("woff"),
+    url(../fonts/OpenSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local(OpenSans-Bold), url(../Fonts/open-sans-v17-latin-600.woff2) format("woff2"),
+    url(../Fonts/open-sans-v17-latin-600.woff) format("woff"),
+    url(../Fonts/OpenSans-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+/*Text Colors*/
+.white {
+  color: #FFFFFF;
+}
+
+.blue {
+  color: #007CC4;
+}
+
+.grey {
+  color: #7E7E7E;
+}
+
+.primary {
+  color: #097dbf;
+}
+
+.secondary {
+  color: #4a4a4a;
+}
+/*Text Colors End*/
+
+/*Text Styling*/
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+/*Text Styling End*/
+
+/*Header Text*/
+h1 {
+  font-family: 'OpenSans';
+  font-size: 2em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  color: #16181e;
+}
+
+h2 {
+  font-family: 'OpenSans';
+  font-size: 1.7em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.23px;
+  color: #16181e;
+}
+
+h3 {
+  font-family: 'OpenSans';
+  font-size: 1.4em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.19px;
+  color: #16181e;
+}
+
+h4 {
+  font-family: 'OpenSans';
+  font-size: 1em;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #16181e;
+}
+
+p{
+  font-family: "OpenSans";
+}
+
+.link {
+  font-family: 'OpenSans';
+  font-size: 8px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.08px;
+  text-decoration: underline;
+  color: #000000;
+}
+/* Header Text End */
+
+/* Sub Header */
+/*Sub Header Selected*/
+.sub-header-active {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.17px;
+  text-align: center;
+  color: #ffffff;
+}
+/*Sub-Header Deselected*/
+.sub-header-inactive {
+  font-family: 'OpenSans';
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.17px;
+  text-align: center;
+  color: #ffffff;
+}
+/* Sub Header End */
+
+/* Search Bar */
+.search-bar-active {
+  font-family: 'OpenSans';
+  font-size: 8.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  color: #000000;
+}
+
+.search-bar-inactive {
+  font-family: 'OpenSans';
+  font-size: 8.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.16px;
+  color: #7e7e7e;
+}
+/* Search Bar End */
+
+/*Buttons*/
+/*Button Layout*/
+.button {
+  font-family: 'OpenSans';
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.27px;
+  text-align: center;
+  width: auto;
+  min-width: 80px;
+  border-radius: 35px;
+}
+/* Button layout */
+.primary-button {
+  color: #ffffff;
+  background-color: #097dbf;
+}
+/* Button layout */
+.secondary-button {
+  color: #ffffff;
+  background-color: #4a4a4a;
+}
+/* Card Module Open Button*/
+.open-button {
+  color: #000000;
+  background-color: #ffffff;
+}
+/* Buttons End */
+
+/*Alerts*/
+/*Decorative square*/
+.alert-square {
+  height: 16px;
+  width: 16px;
+  background-color: #ffffff;
+}
+/*Text*/
+.alerts-grade-text {
+  color: #ffffff;
+  font-family: "Open Sans ExtraBold";
+  font-size: 18px;
+  line-height: 24px;
+}
+/*Container*/
+.alerts-plan-box {
+  height: 19px;
+  width: 123px;
+  color: #313541;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 19px;
+}
+/*Error Alert*/
+.error-border {
+  box-sizing: border-box;
+  border: 1px solid #e34c4c;
+  border-radius: 4px;
+  background-color: rgba(227, 76, 76, 0.05);
+}
+/*Warning Alert*/
+.warning-border {
+  box-sizing: border-box;
+  border: 1px solid #f7b422;
+  border-radius: 4px;
+  background-color: rgba(247, 180, 34, 0.05);
+}
+/* Alerts End */
+
+/* Textbox Input */
+.textbox {
+  /* Provided by Timo, but not found in our scope.
+  height: 47px;
+  width: 410px;
+  */
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+/*Active*/
+.input-title {
+  font-family: 'OpenSans';
+  font-size: 9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.17px;
+  text-align: center;
+  color: #7e7e7e;
+}
+/*Written Text*/
+.input-filled {
+  font-family: 'OpenSans';
+  font-size: 9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.17px;
+  color: #333333;
+}
+/* Textbox End */
+
+/* Dropdown */
+.dropdown-rectangle {
+  height: 37px;
+  border-radius: 5px;
+  background-color: #f6f7f8;
+}
+/*Normal*/
+.ui-dropdown-panel {
+  height: 24px;
+  width: 24px;
+}
+/*Dropdown Pressed*/
+.ui-dropdown-trigger {
+  height: 24px;
+  width: 24px;
+}
+/*Active*/
+.dropdown-rectangle:hover {
+  background-color: #cecece;
+}
+/* Text */
+.dropdown-title {
+  font-family: 'OpenSans';
+  font-size: 9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.17px;
+  text-align: center;
+  color: #333333;
+}
+/* Dropdown End */
+
+/*Navbar*/
+/*Background*/
+.navbar-header {
+  height: 88px;
+  width: 1440px;
+  background-color: #f6f7f8;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+/*Logo*/
+.logo-ihp {
+  height: 40px;
+  width: 106px;
+}
+/*Profile*/
+.navbar-profile {
+  box-sizing: border-box;
+  height: 57px;
+  width: 57px;
+  border: 3px solid #7e7e7e;
+}
+/*Underline*/
+.navbar-highlighted {
+  height: 5px;
+  width: 134px;
+  background-color: #097dbf;
+}
+/*Sub Header Background*/
+.navbar-subheader {
+  height: 45px;
+  background-color: #097dbf;
+}
+/*Navbar End*/
+
+/*Card Module*/
+/*Background*/
+.card-module-full {
+  height: 301px;
+  width: 1329px;
+  border-radius: 5px;
+  background-color: #f6f7f8;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+/*Background Half*/
+.card-module-half {
+  height: 301px;
+  width: 650px;
+  border-radius: 5px;
+  background-color: #f6f7f8;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+/*Primary Color*/
+
+
+body .card-module-header-primary .ui-panel .ui-panel-titlebar {
+  border-radius: 5px 5px 0 0;
+  padding: 4px 4px 1px 4px;
+  background-color: #097dbf;
+}
+
+/*Secondary Color*/
+body .card-module-header-secondary .ui-panel .ui-panel-titlebar {
+  border-radius: 5px 5px 0 0;
+  padding: 4px 4px 1px 4px;
+  background-color: #7e7e7e;
+}
+/*Card Module End*/
+
+/*Footer*/
+/*Background*/
+p-footer {
+  /* height: 65px; */
+  background-color: #f6f7f8;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+  text-align: right;
+}
+/*Ask Dhi Icon*/
+.ask-dhi {
+  height: 60px;
+  width: 60px;
+}
+/*Secure Messaging Icon*/
+.secure-messaging {
+  height: 36px;
+  width: 45px;
+}
+/*Footer End*/
+
+/*Landing Screen Icons*/
+/*Background*/
+.blue-gradient-rectangle {
+  height: 197px;
+  width: 230px;
+  border-radius: 25px;
+  background: linear-gradient(180deg, #15b4e1 0%, #097dbf 100%);
+  box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+/*Icon*/
+.icon {
+  height: 177px;
+  width: 200px;
+}
+/*Landing Screen Icons End*/
+
+/*Sliders*/
+/*Filled Line*/
+.slider-blue-line {
+  height: 6px;
+  border-radius: 40px;
+  background-color: #097DBF;
+}
+/*Unfilled Line*/
+.slider-grey-line {
+  height: 6px;
+  border-radius: 40px;
+  background-color: #E6E6E6;
+}
+/*Outer Draggable Circle*/
+.slider-outer-circle {
+  height: 18px;
+  width: 18px;
+  border-radius: 40px;
+  background-color: #097DBF;
+}
+/*Inner Draggable Circle*/
+.slider-inner-circle {
+  height: 8px;
+  width: 8px;
+  border-radius: 40px;
+  background-color: #FFFFFF;
+}
+/*Sliders End*/
+
+/*Tables*/
+/*First Header Background*/
+.data-table th:nth-child(1){
+  background-color: #097DBF;
+}
+/*Table Header Layout*/
+.data-table th{
+  font-family: 'OpenSans';
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.23px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background-color: #7E7E7E;
+  height: 36px;
+}
+/*Table body text*/
+.data-table {
+  color: #000000;
+  font-family: 'OpenSans';
+  font-size: 16px;
+  letter-spacing: 0.31px;
+  line-height: 22px;
+}
+/*Row separation*/
+.data-table tr{
+  border-bottom: 2px solid #DFDFDF;
+}
+/*Odd rows*/
+.data-table tr:nth-child(odd) {
+  height: 34px;
+  background-color: #FFFFFF;
+}
+/*Even rows*/
+.data-table tr:nth-child(even) {
+  height: 34px;
+  background-color: #ECECEC;
+}
+/*Sort Arrows*/
+.sort-arrows {
+  height: 18px;
+  width: 9px;
+}
+/* Tables End *
+
+/*Document Grid Tile*/
+/*Icon*/
+.document-icon {
+  height: 30px;
+  width: 29.69px;
+  background-color:
+  #7E7E7E;
+}
+/*Background*/
+.document-bg {
+  height: 45px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+/*Title*/
+.document-title {
+  height: 21px;
+  width: 117px;
+  color: #212529;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.27px;
+  line-height: 19px;
+}
+/*Detailed Text*/
+.document-detail-text {
+  height: 16px;
+  width: 48px;
+  color: #212529;
+  font-family: 'OpenSans';
+  font-size: 14px;
+  letter-spacing: 0.27px;
+  line-height: 19px;
+}
+/*Document Grid Tile End*/
+
+/*Checkbox*/
+/*Unchecked*/
+input[type="checkbox"] {
+  background: url('/assets/Images/Misc/checkbox-grey.png');
+  height: 15px;
+  width: 15px;
+}
+/*Checked*/
+input[type="checkbox"]:checked {
+  background: url('/assets/Images/Misc/checkbox.png');
+  width: 16px;
+  height: 16px;
+}
+/*Checkbox End*/

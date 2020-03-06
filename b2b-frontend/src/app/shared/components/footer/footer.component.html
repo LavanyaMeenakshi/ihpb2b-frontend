@@ -1,0 +1,22 @@
+<p-dialog header="Chat with Di" [(visible)]="chatVis" class="popz" modal="true">
+    SORRY THE CHAT ROBOT IS BROKEN. TRY AGAIN LATER
+</p-dialog>
+
+<p-dialog header="Examine Messages" [(visible)]="msgVis" class="swagger">
+    The message system is NYI. Oops.
+</p-dialog>
+ 
+ <p-footer class="footer">
+
+    <div class="navbar">
+        <!-- empty div for styling, makes the other one right-justified -->
+        <div> </div>
+        <div>
+            <!-- TODO: icons here broke when we switched to primeNG, find replacements -->
+            <p-button label="Chat Robot" (onClick)="showChatDialog()" icon="pi pi-question-circle"></p-button>
+            <p-button *ngIf="!msgs" label="Messages" (onClick)="showMsgDialog()"></p-button>  
+            <p-button *ngIf="msgs > 0" label="New Message(s)" (onClick)="showMsgDialog()" icon="pi pi-envelope"></p-button>  
+            <p-button label="Refresh" (onClick)="msgRefresh()" icon="pi pi-refresh"></p-button>   
+        </div>
+    </div>
+</p-footer>

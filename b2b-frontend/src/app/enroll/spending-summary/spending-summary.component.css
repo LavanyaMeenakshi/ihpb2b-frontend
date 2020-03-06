@@ -1,0 +1,21 @@
+.bar-one{
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+
+.bar-two{
+    width: 40%;
+    overflow: hidden;
+    margin-left: 20px;
+
+}
+
+.bar{
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+}
+

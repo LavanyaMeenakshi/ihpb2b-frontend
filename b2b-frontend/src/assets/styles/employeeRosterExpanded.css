@@ -1,0 +1,128 @@
+.grey-rectangle {
+    height: 250px;
+    width: 1300;
+    border-radius: 5px;
+    background-color: #F6F8F9;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.blue-rectangle {
+    height: 32px;
+    width: 1300;
+    border-radius: 5px 5px 0 0;
+    background-color: #097DBF;
+}
+
+.white-button {
+    height: 23px;
+    width: 85px;
+    border-radius: 13.5px;
+    background-color: #FFFFFF;
+    float: right;
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: -55px;
+    margin-right: 5px;
+}
+
+#HASH {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-module-full {
+    height: 250px;
+    width: 1300;
+    border-radius: 5px;
+    background-color: #F6F8F9;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.loading-bar {
+    height: 20px;
+    width: 1170px;
+    background-color: #E6E6E6;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 900px;
+    background-color: #56BD5B;
+    border-radius: 15px;
+}
+
+.grey-button {
+    height: 27px;
+    width: 153px;
+    border-radius: 13.5px;
+    background-color: #4A4A4A;
+    color: #FFFFFF;
+    float: right;
+    font-family: "Open Sans";
+    margin-top: -35px;
+    margin-right: 10px;
+    line-height: 19px;
+    font-size: 14px;
+    letter-spacing: 0.27px;
+}
+
+.blue-button {
+    height: 20px;
+    width: 153px;
+    border-radius: 13.5px;
+    background-color: #097DBF;
+    color: #FFFFFF;
+    float: right;
+    font-family: "Open Sans";
+    margin-right: 10px;
+    margin-top: -45px;
+    line-height: 19px;
+    font-size: 14px;
+    letter-spacing: 0.27px;
+}
+
+.search {
+    height: 20px;
+    margin-top: -40px;
+    margin-left: 10px;
+    border-radius: 15px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.17px;
+    color: #333333;
+}
+
+table {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    font-size: 14px;
+    padding: 8px;
+    background-color: #4A4A4A;
+    color: #FFFFFF;
+}
+
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    font-size: 14px;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    font-size: 14px;
+    background-color: #dddddd;
+}

@@ -1,0 +1,160 @@
+<p-panel class="card-module-header-primary">
+    <p-header>
+        <span class="white bold" *ngIf="employee">
+            {{employee[0]["First Name"]}} {{employee[0]["Last Name"]}}
+        </span>
+        <button pButton label="Close" routerLink="/employee-search-results" id="three-sixty-view-close-button" name="three-sixty-view-close-button"
+            type="button" class="open-button float-right">
+            <!--attach a function to move back to search results page-->
+        </button>
+    </p-header>
+    <div class="p-grid">
+        <div class="p-col-1">
+            <img src="../../../assets/robert-ryan.png" height="50%" width="100%" alt="">
+        </div>
+        <div class="p-col-11">
+            <div class="p-grid">
+                <div class="p-col-1">
+                    <b>Name:</b>
+                </div>
+                <div class="p-col-2">{{employee[0]["First Name"]+" "+employee[0]["Last Name"]}}</div>
+                <div class="p-col-2">
+                    <b>Age:</b>
+                </div>
+                <div class="p-col-2">{{employee[0]["Age"]}}</div>
+                <div class="p-col-1">
+                    <b>Plan:</b>
+                </div>
+                <div class="p-col-4">{{findPlan(employee[0]["Opted Plan"])}}</div>
+
+                <div class="p-col-1">
+                    <b>Address:</b>
+                </div>
+                <div class="p-col-2">{{employee[0]["Member Street Address"]}}</div>
+                <div class="p-col-2">
+                    <b>Gender:</b>
+                </div>
+                <div class="p-col-2">{{employee[0]["Gender"]}}</div>
+                <div class="p-col-1">
+                    <b>Status:</b>
+                </div>
+                <div class="p-col-4">{{findStatusCode(employee[0]["834 Enrollment File Status"])}}</div>
+
+                <div class="p-col-1">
+                    <b>City:</b>
+                </div>
+                <div class="p-col-2">{{employee[0]["Member City"]}}</div>
+                <div class="p-col-2">
+                    <b>Primary Physician:</b>
+                </div>
+                <div class="p-col-2">{{employeeWithPCP[0]["PCP First Name"]+" "+employeeWithPCP[0]["PCP Last Name"]}}</div>
+                <div class="p-col-1">
+                    <b>Annual Exam</b>
+                </div>
+                <div class="p-col-4">{{annualExam.date}}</div>
+
+                <div class="p-col-1">
+                    <b>State:</b>
+                </div>
+                <div class="p-col-2">{{employee[0]["Member State"]}}</div>
+                <div class="p-col-2">
+                    <b>Primary Dentist:</b>
+                </div>
+                <div class="p-col-7">{{dentist.name}}</div>
+            </div>
+        </div>
+        <div class="p-col-11 p-offset-1 p-nogutter"></div>
+        <div class="p-col-11 p-offset-1 p-nogutter"></div>
+        <div class="p-col-11 p-offset-1 p-nogutter" [(ngModel)]='show' *ngIf="show" name="more-info" ngDefaultControl>
+            <div class="p-grid">
+                <div class="p-col-1">
+                    <b>Benefits Plans:</b>
+                </div>
+                <div class="p-col-2">
+                    <a *ngIf="employee">Health</a>
+                </div>
+
+                <div class="p-col-2">
+                    <b>Income:</b>
+                </div>
+                <div class="p-col-2">{{employeeAdditionalDetails[0]["income"]}}</div>
+                <div class="p-col-1">
+                    <b>Healthcare Access:</b>
+                </div>
+                <div class="p-col-4">{{employeeAdditionalDetails[0]["access"]}}</div>
+
+                <div class="p-col-2 p-offset-3">
+                    <b>Education:</b>
+                </div>
+                <div class="p-col-2">{{employeeAdditionalDetails[0]["education"]}}</div>
+                <div class="p-col-1">
+                    <b>Fitness</b>
+                </div>
+                <div class="p-col-4">{{employeeAdditionalDetails[0]["fitness"]}}</div>
+
+                <div class="p-col-2 p-offset-3">
+                    <b>Employment:</b>
+                </div>
+                <div class="p-col-2">{{employeeAdditionalDetails[0]["employment"]}}</div>
+                <div class="p-col-1">
+                    <b>Diet:</b>
+                </div>
+                <div class="p-col-4">{{employeeAdditionalDetails[0]["diet"]}}</div>
+
+                <div class="p-col-2 p-offset-3">
+                    <b>Support Networks:</b>
+                </div>
+                <div class="p-col-7">{{employeeAdditionalDetails[0]["supportNetworks"]}}</div>
+            </div>
+        </div>
+        <div class="p-col-12">
+
+            <button pButton [label]="moreOrLess" class="ui-button-rounded float-right" (click)='showMoreOrLess()' name="more-button"></button>
+
+        </div>
+    </div>
+
+    <div class="p-grid">
+        <div class="p-col-12"></div>
+        <div class="p-col-12"></div>
+        <div class="p-col-7">
+            <app-spending-summary></app-spending-summary>
+        </div>
+        <div class="p-col-5">
+            <div class="p-grid p-dir-rev">
+                <div class="p-col-4 p-offset-9">
+                    <button pButton label="Request ID Card" class="ui-button-rounded" name="request-id-card"></button>
+                </div>
+                <div class="p-col-4">
+                    <button pButton label="Edit Coverage" class="ui-button-rounded" name="request-id-card"></button>
+                </div>
+                <div class="p-col-4">
+                    <button pButton label="Edit Dependents" class="ui-button-rounded" name="request-id-card"></button>
+                </div>
+            </div>
+        </div>
+        <div class="p-col-7">
+            <div class="p-grid">
+                <div class="p-col-12">
+                    <app-claim-search></app-claim-search>
+                </div>
+                <div class="p-col-12">
+                    <p>Primary care table goes here</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-col-5">
+            <div class="p-grid">
+                <div class="p-col-12">
+                    <p>Dependents widget goes here</p>
+                </div>
+                <div class="p-col-12">
+                    <p>Family widget goes here</p>
+                </div>
+                <div class="p-col-12">
+                    <p>Other Insurance widget goes here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</p-panel>

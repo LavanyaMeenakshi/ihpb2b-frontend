@@ -1,0 +1,14 @@
+body .ui-button.ui-corner-all {
+    border-radius: 35px;
+}
+
+body .ui-button.open-button {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+body .ui-button.open-button:hover {
+    background-color: #E6E6E6;
+    color: black;
+    border: 1px solid white;
+}

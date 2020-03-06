@@ -1,0 +1,39 @@
+<div *ngIf="data && data.length; else noData">
+    <p-table 
+    [(value)]="data"
+    id="results-table" 
+    [paginator] = true
+    [rows] = "10"
+    [rowsPerPageOptions]="[5,10,15,20,25]"
+    >
+
+    <ng-template pTemplate="header">
+        <tr>
+            <th [pSortableColumn]="'Member ID'">Employee ID<p-sortIcon [field]="'Member ID'"></p-sortIcon></th>
+            <th [pSortableColumn]="'Last Name'">Name<p-sortIcon [field]="'Last Name'"></p-sortIcon></th>
+            <th [pSortableColumn]="'Opted Plan'">Plan<p-sortIcon [field]="'Opted Plan'"></p-sortIcon></th>
+            <th [pSortableColumn]="'834 Enrollment File Status'">Enrollment<p-sortIcon [field]="'834 Enrollment File Status'"></p-sortIcon></th>
+            <th [pSortableColumn]="'Member City'">City<p-sortIcon [field]="'Member City'"></p-sortIcon></th>
+            <th [pSortableColumn]="'Member State'">State<p-sortIcon [field]="'Member State'"></p-sortIcon></th>
+        </tr>  
+    </ng-template>
+    <ng-template pTemplate="body" let-employee>
+        <!-- clickable is a class defined in this component's .css for table rows
+            changes the color of the row so that it clear that the row can be clicked on -->
+        <tr 
+            (click)="goTo360View(employee)" 
+            routerLink = "/three-sixty-employee">
+            
+            <td>{{employee["Member ID"]}}</td>
+            <td>{{employee["First Name"]+" "+employee["Last Name"]}}</td>
+            <td>{{findPlan(employee["Opted Plan"])}}</td>
+            <td>{{findStatusCode(employee["834 Enrollment File Status"])}}</td>
+            <td>{{employee["Member City"]}}</td>
+            <td>{{employee["Member State"]}}</td>
+        </tr>
+    </ng-template>
+    </p-table>
+</div>
+<ng-template #noData>
+    <h1 class="bold text-center">There is no data to display.</h1>
+</ng-template>

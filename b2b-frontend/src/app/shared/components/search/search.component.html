@@ -1,0 +1,85 @@
+<p-panel class="card-module-header-primary">
+    <p-header id="toptool" class="white">
+        <span>
+            <strong>Employee Roster</strong>
+        </span>
+        <div class="ui-toolbar-group-right">
+            <button pButton *ngIf="router.url !== '/employee-search-results'" type="button" label="Open" class="ui-button-secondary ui-button-rounded float-right" (click)="navToESR()"></button>
+            <button pButton *ngIf="router.url === '/employee-search-results'" routerLink = "/" label="Close" id="employee-search-close-button" class="ui-button-secondary ui-button-rounded float-right" name="employee-search-close-button" type = "button" style="float:right"><!--have onclick move to previous page-->
+            </button>
+        </div>
+    </p-header>
+
+    <div class="p-grid p-justify-center">
+        <div class="p-col-fixed">
+            <!--searchbar-->
+            <div class="ui-inputgroup search-bar">
+                <span class="ui-inputgroup-addon">
+                    <i class="pi pi-search" style="line-height: 1.25; color:black"></i>
+                </span>
+                <input type="search" pInputText placeholder="Employee ID" aria-label="Search" [(ngModel)]="idNumber" (click)="searchBarClick()">
+            </div>
+            <!--end searchbar-->
+        </div>
+
+        <div class="p-col-fixed">
+            <!--plan dropdown-->
+            <label for="Plan">
+                <h6>Plan:</h6>
+            </label>
+            <p-dropdown [options]="planOptions" [(ngModel)]="selectedPlan" placeholder="Select a Plan" optionLabel="name" name="Plan"
+                id="Plan" (click)="dropDownClick()">
+            </p-dropdown>
+            <!--end plan dropdown-->
+        </div>
+
+        <div class="p-col-fixed">
+            <!--enrollment dropdown-->
+            <label for="Enrollment">
+                <h6>Enrollment:</h6>
+            </label>
+            <p-dropdown [options]="enrollmentOptions" [(ngModel)]="selectedEnrollment" placeholder="Select an Enrollment" optionLabel="name"
+                name="Enrollment" id="Enrollment" (click)="dropDownClick()">
+            </p-dropdown>
+            <!--end enrollment dropdown-->
+        </div>
+
+
+        <div class="p-col-fixed">
+            <!--state dropdown-->
+            <label for=" State ">
+                <h6>State:</h6>
+            </label>
+            <p-dropdown [options]="stateOptions" [(ngModel)]="selectedState" optionLabel="name" name="State " id="State " placeholder="Select a State"
+                (click)="setCities(selectedState)" (click)="dropDownClick()">
+            </p-dropdown>
+            <!--end state dropdown-->
+        </div>
+
+        <div class="p-col-fixed">
+            <!--city dropdown-->
+            <label for="City ">
+                <h6>City:</h6>
+            </label>
+            <p-dropdown [options]="cityOptions" [(ngModel)]="selectedCity" optionLabel="name" name="City" id="City" placeholder="Select a City"
+                (click)="dropDownClick()">
+            </p-dropdown>
+            <!--end city dropdown-->
+        </div>
+
+        <div class="p-col-fixed">
+            <!--checkbox-->
+            <p-checkbox (change)="checkBox()" name="allEmployees" id="allEmployees" (click)="checkBoxClick()" [(ngModel)]="check"></p-checkbox>
+            <label for="allEmployees">
+                <h6>All Employees</h6>
+            </label>
+            <!--end checkbox-->
+        </div>
+
+        <div class="p-col-fixed">
+            <button pButton type="button" label="Search" class="ui-button-rounded" (click)="search()">
+            </button>
+        </div>
+
+    </div>
+</p-panel>

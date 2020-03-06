@@ -1,0 +1,79 @@
+/*CSS for Document Grid in Admin page*/
+/*Header for each Category Container eg Contract Documents*/
+.file-tile-header{
+    margin-left: 15px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    line-height: 24px;
+}
+
+/*Individual tiles*/
+.file-white-tile {
+    position:relative;
+    height: 45px;
+    width: 150px;
+    margin-left:6px;
+    margin-right:6px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+/*Container that holds the tile header and tiles*/
+.file-category-container{
+    width: 650px;
+    height: 71px;
+    top:0px;
+}
+
+/*Tile-only container*/
+.file-tile-container {
+    display: flex;
+}
+
+/*file name for tile*/
+.file-name{
+    position:absolute;
+    left:25%;
+    top:7%;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bold;
+    color: #000000;
+}
+
+/*file size for tile ie 12MB*/
+.file-size{
+    position:absolute;
+    left:25%;
+    top:50%;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: #212529;
+}
+
+/*file type for tile ie PDF*/
+.file-type{
+    position:absolute;
+    left:75%;
+    top:50%;
+    font-size: 14px;    
+    font-family: OpenSans;
+    color: #212529;
+}
+
+/*Document logo for tile*/
+.file-logo{
+    position:absolute;
+    top:15%;
+    left:5%;
+    width:23.2px;
+    height:30px;
+}
+.reportsContainer{
+    height: 100px;
+}
+
+

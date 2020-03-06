@@ -1,0 +1,7 @@
+// if you need to resize the footer, this creates extra white space at the end,
+// so that you can scroll past the end of the content.
+
+// Basically, it keeps the footer box from covering up the last bit of content.
+.foot-spacing {
+      margin-bottom: 9%;
+  }

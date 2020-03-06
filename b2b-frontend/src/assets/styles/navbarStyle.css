@@ -1,0 +1,28 @@
+.secondNavbar{
+    display: none;
+}
+.profile{
+    width: 300px;
+    margin-bottom: -2px;
+    text-align: right
+}
+#navLogo{
+    height: 50px;
+    margin-right: 24px
+}
+.navbar-highlighted {
+    position: relative;
+    top: 30px;
+    right: 20px;
+}
+.blue-rectangle-logo {
+    position: relative;
+    top: 13px;
+    right: 20px;
+    height: 5px;
+    width: 134px;
+    background-color: #097dbf;
+}
+.topNavItem{
+    margin-right: 80px;
+}

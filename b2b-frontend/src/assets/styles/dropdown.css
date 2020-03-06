@@ -1,0 +1,8 @@
+body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item:not(.ui-state-highlight):not(.ui-state-disabled):hover {
+    background-color: #CECECE;
+}
+
+.ui-dropdown-panel {
+    height: auto;
+    width: auto;
+  }

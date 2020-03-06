@@ -1,0 +1,41 @@
+<p-panel class="card-module-header-secondary">
+    <p-header>
+        <span class="bold white">Claims</span>
+        <!--searchbar-->
+        <button pButton type="button" label="Search" class="ui-button-rounded open-button float-right" (click)="searchClaim()"></button>
+        <div class="ui-inputgroup search-bar float-right">
+            <span class="ui-inputgroup-addon">
+                <i class="pi pi-search"></i>
+            </span>
+            <input type="search" pInputText placeholder="Search" name="searchClaimId" id="searchClaimId" aria-label="Search" [(ngModel)]="searchClaimId">
+        </div>
+        <!--end searchbar-->
+    </p-header>
+    <div *ngIf="claims && claims.length; else noData">
+        <p-table [(value)]="claims">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th [pSortableColumn]="'Claim_ID'">#<p-sortIcon [field]="'Claim_ID'"></p-sortIcon></th>
+                    <th [pSortableColumn]="'Claim_Begin_DOS'">Date<p-sortIcon [field]="'Claim_Begin_DOS'"></p-sortIcon></th>
+                    <th [pSortableColumn]="'Member_Id'">Member<p-sortIcon [field]="'Member_Id'"></p-sortIcon></th>
+                    <th [pSortableColumn]="'Provider_Id'">Service Provider<p-sortIcon [field]="'Provider_Id'"></p-sortIcon></th>
+                    <th [pSortableColumn]="'Paid_Amt'">Amount<p-sortIcon [field]="'Paid_Amt'"></p-sortIcon></th>
+                    <th [pSortableColumn]="'Paid_Status'">Status<p-sortIcon [field]="'Paid_Status'"></p-sortIcon></th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-claim>
+                <tr>
+                    <td>{{claim.Claim_ID}}</td>
+                    <td>{{claim.Claim_Begin_DOS}}</td>
+                    <td>{{claim.Member_Id}}</td>
+                    <td>{{claim.Provider_Id}}</td>
+                    <td>{{claim.Paid_Amt}}</td>
+                    <td>{{claim.Paid_Status}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+    <ng-template #noData>
+        <h1 class="bold">There is no data to display.</h1>
+    </ng-template>
+</p-panel>

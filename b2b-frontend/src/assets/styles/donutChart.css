@@ -1,0 +1,75 @@
+.block {
+    margin: 25px 25px 0 0;
+    background: #FFFFFF;
+    border-radius: 5px;
+    float: left;
+    width: 300px;
+    overflow: hidden;
+}
+
+.donut-chart-block {
+    overflow: hidden;
+}
+
+.donut-chart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 2rem auto;
+    border-radius: 100%
+}
+
+.donut-chart .center {
+    background: #FFFFFF;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 70px;
+}
+
+.clip {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.item {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    #font-family: monospace;
+    font-size: 1.5rem;
+}
+
+#section1 {
+    transform: rotate(-34deg);
+}
+
+#section1 .item {
+    background-color: #6a0dad;
+    transform: rotate(110deg);
+}
+
+#section2 {
+    transform: rotate(76deg);
+}
+
+#section2 .item {
+    background-color: #11A8AB;
+    transform: rotate(140deg);
+}
+
+#section3 {
+    transform: rotate(215deg);
+}
+
+#section3 .item {
+    background-color: #FFA500;
+    transform: rotate(113deg);
+}

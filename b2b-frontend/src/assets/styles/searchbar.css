@@ -1,0 +1,17 @@
+body .ui-inputgroup.search-bar .ui-inputgroup-addon {
+    color: black;
+    background-color: white;
+    border: 1px solid grey;
+    border-right: 0;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+body .ui-inputgroup.search-bar input{
+    color: black;
+    background-color: white;
+    border: 1px solid grey;
+    border-left: 0;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}

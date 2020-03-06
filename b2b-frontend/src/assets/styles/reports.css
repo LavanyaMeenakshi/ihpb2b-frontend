@@ -1,0 +1,16 @@
+/*
+  This changes the option tag so that the currently selected option is
+  highlighted in grey.
+*/
+select option:checked {
+  background-color: #cecece;
+}
+
+/*
+  this doesn't acutally change the background to grey. The hover color is based
+  on the browser and defaults to blue in chrom and fire fox and a different lighter
+ grey in ie and edge. It can probably be changed with a javascript file.
+*/
+option:hover {
+  background-color: #cecece;
+}

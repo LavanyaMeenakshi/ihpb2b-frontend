@@ -1,0 +1,77 @@
+/* For debugging */
+/*
+body {
+    border: 1px solid green;
+}
+#payment > *, #billingHistory > * {
+    border: 1px solid blue;
+}
+#payment, #billingHistory {
+    border: 1px solid red;
+}
+.col {
+    border: 1px solid blue;
+}
+.row {
+    border: 1px solid yellow;
+}
+*/
+
+/* DEBUGGING END */
+
+/* Payment Styling */
+
+/* Payment header */
+/* None */
+
+/* Payment body */
+#otpButton {
+    position: relative;
+    top: 1em;
+}
+
+/* Shared Payment Styling */
+/* None */
+
+/* PAYMENT STYLING END */
+
+/* Billing History Styling */
+
+/* Billing History header */
+/* None */
+
+/* Billing History body */
+.page-link {
+    color: #888888;
+    border: 0px solid white;
+    padding: 0 0.5em;
+    border-radius: 0.25em;
+}
+li:first-of-type .page-link,
+li:last-of-type .page-link{
+    color: #097dbf;
+}
+li .page-link:hover {
+    color: white;
+    background-color: #097dbf;
+}
+
+/* Shared Billing History Styling */
+/* None */
+
+/* BILLING STYLING END */
+
+/* All Shared Styling */
+header {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+#payment, #billingHistory {
+    padding: 0.4em;
+    margin: 0.25em;
+    background-color: white;
+    width: 100%;
+}
+.card-module-full{
+    height: auto;
+}

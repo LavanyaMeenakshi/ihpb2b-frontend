@@ -1,0 +1,67 @@
+    /*Container holding both white tiles*/
+.content-container{
+    position:relative;
+}
+
+    /*The bar chart tile*/
+.bar-chart-tile{
+    position: absolute;
+    left:10px;
+    top:16px;
+    width: 368px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #ffffff;    
+}
+
+    /*Tile with both numeric figures*/
+.two-figures-tile{
+    position: absolute;
+    top:16px;
+    left: 390px;
+    width: 240px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+#saved-money{
+    position: absolute;
+    left:10px;
+    top:45px;
+}
+#saved-title{
+    position: absolute;
+    left:10px;
+    top:100px;
+}
+
+#invested-money{
+    position: absolute;
+    left:10px;
+    top: 160px;
+}
+#invested-title{
+    left:10px;
+    top:215px;
+    position: absolute;
+}
+
+.img-barGraph{
+    width: 325px;
+    height: 236px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:55px;
+}
+
+
+
+.card-cost-savings{
+    height: 380px;
+    width: 650px;
+    border-radius: 5px;
+    background-color: #f6f7f8;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+}

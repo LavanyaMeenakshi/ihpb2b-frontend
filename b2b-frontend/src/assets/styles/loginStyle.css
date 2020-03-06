@@ -1,0 +1,44 @@
+#loginNavbar{
+    background-color: #f6f7f8;
+    height: 90px;
+    width: 100%;
+    box-shadow: 0px 1px 10px rgb(173, 173, 173);
+}
+#loginIcon{
+    margin-top:200px
+}
+#loginForm{
+    background-color: #f6f7f8
+}
+.navbar-highlighted {
+    position: relative;
+    top: 27px;
+    right: 20px;
+}
+.blue-rectangle-logo {
+    position: relative;
+    top: 12px;
+    right: 20px;
+    height: 5px;
+    width: 134px;
+    background-color: #097dbf;
+}
+#navLogo{
+    height: 50px;
+    margin-right: 24px
+}
+.topNavItem{
+    margin-right: 80px;
+}
+.profile{
+    width: 300px;
+    margin-bottom: -2px;
+    text-align: right
+}
+.navButton{
+    margin-right: 40px
+}
+#forgotPassword{
+    float: right;
+    margin-bottom: 200px;
+}

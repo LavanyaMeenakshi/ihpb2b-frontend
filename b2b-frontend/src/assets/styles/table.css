@@ -1,0 +1,22 @@
+body .ui-table .ui-table-thead .ui-sortable-column {
+    background-color: #7E7E7E;
+    color: #FFFFFF;
+}
+
+body .ui-table .ui-table-thead .ui-state-highlight {
+    background-color: #097DBF;
+}
+
+body .ui-table .ui-table-tbody > .ng-star-inserted:hover {
+    background-color: #17a2b8;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+body .ui-table tr {
+    border-bottom: 2px solid #DFDFDF;
+}
+
+body .ui-table .ui-table-tbody > tr:nth-child(even) {
+    background-color: #ECECEC;
+}

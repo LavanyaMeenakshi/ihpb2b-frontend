@@ -1,0 +1,81 @@
+.card-module-full{
+    height: 450px;
+    width: 1200px;
+}
+
+.loading-bar {
+    height: 20px;
+    width: 1170px;
+    background-color: #E6E6E6;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 900px;
+    background-color: #56BD5B;
+    border-radius: 15px;
+}
+
+.grey-button {
+    height: 27px;
+    width: 153px;
+    border-radius: 13.5px;
+    background-color: #4A4A4A;
+    color: #FFFFFF;
+    float: right;
+    font-family: "Open Sans";
+    margin-top: -35px;
+    margin-right: 10px;
+    line-height: 19px;
+    font-size: 14px;
+    letter-spacing: 0.27px;
+}
+
+.blue-button {
+    height: 27px;
+    width: 153px;
+    border-radius: 13.5px;
+    background-color: #097DBF;
+    color: #FFFFFF;
+    float: right;
+    font-family: "Open Sans";
+    margin-right: 10px;
+    margin-top: -45px;
+    line-height: 19px;
+    font-size: 14px;
+    letter-spacing: 0.27px;
+}
+
+.search {
+    height: 20px;
+    margin-top: -40px;
+    margin-left: 10px;
+    border-radius: 15px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.17px;
+    color: #333333;
+}
+
+.img-mg{
+    width:15px;
+    height:15px;
+    margin-left:10px;
+}
+
+.img-map{
+    padding-left:10px;
+    padding-top:10px;
+}
+
+.p-text{
+    font-family:'Open Sans';
+    padding-left:10px;
+}

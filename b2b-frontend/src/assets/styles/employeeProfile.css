@@ -1,0 +1,16 @@
+/*Commonly used stylings on EmployeeProfile*/
+.ta-left{
+    text-align:left; 
+}
+
+.w-75px{
+    width:75px;
+}
+
+.w-150px{
+    width:75px;
+}
+
+.bold{
+    font-weight: 700;
+}

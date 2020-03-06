@@ -1,0 +1,8 @@
+/* Styles commonly used in Overview.css */
+.card-module-full {
+    height: 450px;
+}
+
+.card-body {
+    border: none;
+}

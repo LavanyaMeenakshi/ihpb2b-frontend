@@ -1,0 +1,23 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: mediumseagreen;
+    text-align: center;
+  }
+
+  .navbar > div {
+      align-items: center;
+  }
+
+  /* next two both work, except they're being overwritten by the PRIMENG css file */
+.popz {
+    color: orange;
+    width: 100%;
+  }
+
+p-dialog {
+    color: rebeccapurple;
+}

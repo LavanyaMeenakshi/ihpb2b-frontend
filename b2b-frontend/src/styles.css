@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/primeflex/primeflex.css';
+@import '../node_modules/primeicons/primeicons.css';
+@import '../node_modules/primeng/resources/themes/nova-light/theme.css';
+@import '../node_modules/primeng/resources/primeng.min.css';
+/* keep at the end */
+@import 'assets/styles/styles.css';
+@import 'assets/styles/table.css';
+@import 'assets/styles/dropdown.css';
+@import 'assets/styles/button.css';
+@import 'assets/styles/searchbar.css';
+@import 'assets/styles/navbar.css';

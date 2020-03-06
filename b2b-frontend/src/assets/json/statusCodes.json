@@ -1,0 +1,18 @@
+[
+    {
+       "Code": "999",
+       "Description": "Processed"
+    },
+    {
+       "Code": "000",
+       "Description": "Submitted"
+    },
+    {
+       "Code": "017",
+       "Description": "Duplicate Information Error"
+    },
+    {
+       "Code": "018",
+       "Description": "Incorrect Information Error"
+    }
+ ]

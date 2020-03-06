@@ -1,0 +1,21 @@
+[
+    {
+        "PlanId":"1",
+        "PlanName":"Basic Plan",
+        "Control Number":"109271",
+        "Suffix":"16",
+        "Account Number":"002",
+        "Plan Summary Code":"AB",
+        "Plan Effective Dt":"4/1/2019",
+        "Plan Expiry Date":"3/31/2020",
+        "Plan Status Code":"11",
+        "Product Identifier":"PPO - POS Choice II",
+        "Network ID":"3310"
+    },
+    {"PlanId":"2","PlanName":"Plus Plan - APCN + Network","Control Number":"109271","Suffix":"16","Account Number":"003","Plan Summary Code":"EF","Plan Effective Dt":"4/1/2019","Plan Expiry Date":"3/31/2020","Plan Status Code":"11","Product Identifier":"PPO - POS Choice II","Network ID":"7510"},
+    {"PlanId":"3","PlanName":"Standard Plan - APCN +Network with Health sav acc","Control Number":"109271","Suffix":"16","Account Number":"004","Plan Summary Code":"CD","Plan Effective Dt":"4/1/2019","Plan Expiry Date":"3/31/2020","Plan Status Code":"11","Product Identifier":"PPO - POS Choice II","Network ID":"1971"},
+    {"PlanId":"4","PlanName":"Plus plan - POSII Network","Control Number":"109271","Suffix":"16","Account Number":"005","Plan Summary Code":"HG","Plan Effective Dt":"4/1/2019","Plan Expiry Date":"3/31/2020","Plan Status Code":"11","Product Identifier":"PPO - POS Choice II","Network ID":"4329"},
+    {"PlanId":"5","PlanName":"Standard Plan - POS II with Health sav acc","Control Number":"109271","Suffix":"16","Account Number":"006","Plan Summary Code":"LK","Plan Effective Dt":"4/1/2019","Plan Expiry Date":"3/31/2020","Plan Status Code":"11","Product Identifier":"PPO - POS Choice II","Network ID":"2798"},
+    {"PlanId":"6","PlanName":"Plan A","Control Number":"109271","Suffix":"16","Account Number":"005","Plan Summary Code":"GH","Plan Effective Dt":"4/1/2017","Plan Expiry Date":"3/31/2018","Plan Status Code":"11","Product Identifier":"PPO - POS Choice II","Network ID":"4329"},
+    {"PlanId":"7","PlanName":"Plan B","Control Number":"109271","Suffix":"16","Account Number":"006","Plan Summary Code":"DC","Plan Effective Dt":"4/1/2018","Plan Expiry Date":"3/31/2019","Plan Status Code":"11","Product Identifier":"PPO - POS Choice II","Network ID":"2798"}
+]
