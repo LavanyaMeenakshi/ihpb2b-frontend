@@ -12,4 +12,5 @@ COPY . /usr/src/app
 
 ENV PORT 5000
 EXPOSE $PORT
-CMD [ "npm", "start" ]
+CMD [ "npm", "start" ]  
+
